@@ -45,7 +45,7 @@ namespace MaterialUI
 			{
 				if (!GameObject.FindObjectOfType<UnityEngine.EventSystems.EventSystem>())
 				{
-					GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/EventSystem.prefab",
+					GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/EventSystem.prefab",
 						typeof (GameObject))).name = "EventSystem";
 				}
 
@@ -56,7 +56,7 @@ namespace MaterialUI
 				else
 				{
 					selectedObject =
-						GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Canvas.prefab",
+						GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Canvas.prefab",
 							typeof (GameObject))) as GameObject;
 					selectedObject.name = "Canvas";
 				}
@@ -73,7 +73,7 @@ namespace MaterialUI
 		private static void CreateBackground()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Background.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Background.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Background");
 			theThing.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
@@ -84,7 +84,7 @@ namespace MaterialUI
 		private static void CreatePanel()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Panel.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Panel.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Panel");
 		}
@@ -94,7 +94,7 @@ namespace MaterialUI
 		private static void CreateText()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Text.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Text.prefab",
 				                                                     typeof (GameObject))) as GameObject;
 			SetupObject("Text");
 		}
@@ -104,7 +104,7 @@ namespace MaterialUI
 		private static void CreateButtonFlat()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Button - Flat.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Button - Flat.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Button - Flat");
 		}
@@ -114,7 +114,7 @@ namespace MaterialUI
 		private static void CreateButtonRaised()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Button - Raised.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Button - Raised.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Button - Raised");
 		}
@@ -125,7 +125,7 @@ namespace MaterialUI
 		{
 			theThing =
 				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath(
-					"Assets/MaterialUI/ComponentPrefabs/Round Button - Flat.prefab", typeof (GameObject))) as GameObject;
+					"Packages/com.invexgames.materialui/ComponentPrefabs/Round Button - Flat.prefab", typeof (GameObject))) as GameObject;
 			SetupObject("Round Button - Flat");
 		}
 
@@ -135,7 +135,7 @@ namespace MaterialUI
 		{
 			theThing =
 				GameObject.Instantiate(
-					AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Round Button - Raised.prefab",
+					AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Round Button - Raised.prefab",
 						typeof (GameObject))) as GameObject;
 			SetupObject("Round Button - Raised");
 		}
@@ -146,7 +146,7 @@ namespace MaterialUI
 		{
 			theThing =
 				GameObject.Instantiate(
-					AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Round Button - Small - Flat.prefab",
+					AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Round Button - Small - Flat.prefab",
 						typeof (GameObject))) as GameObject;
 			SetupObject("Small Round Button - Flat");
 		}
@@ -157,7 +157,7 @@ namespace MaterialUI
 		{
 			theThing =
 				GameObject.Instantiate(
-					AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Round Button - Small - Raised.prefab",
+					AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Round Button - Small - Raised.prefab",
 						typeof (GameObject))) as GameObject;
 			SetupObject("Small Round Button - Raised");
 		}
@@ -168,7 +168,7 @@ namespace MaterialUI
 		{
 			theThing =
 				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath(
-					"Assets/MaterialUI/ComponentPrefabs/SpinnyArrow Button.prefab", typeof (GameObject))) as GameObject;
+					"Packages/com.invexgames.materialui/ComponentPrefabs/SpinnyArrow Button.prefab", typeof (GameObject))) as GameObject;
 			SetupObject("Spinny Arrow Button");
 		}
 
@@ -177,7 +177,7 @@ namespace MaterialUI
 		private static void CreateCheckbox()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Checkbox.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Checkbox.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Checkbox");
 		}
@@ -187,7 +187,7 @@ namespace MaterialUI
 		private static void CreateRadioButtons()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/RadioGroup.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/RadioGroup.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Radio Buttons");
 		}
@@ -197,7 +197,7 @@ namespace MaterialUI
 		private static void CreateSwitch()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Switch.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Switch.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Switch");
 		}
@@ -207,7 +207,7 @@ namespace MaterialUI
 		private static void CreateTextInput()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/TextInput.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/TextInput.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Text Input");
 		}
@@ -217,7 +217,7 @@ namespace MaterialUI
 		private static void CreateSlider()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Slider.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Slider.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Slider");
 		}
@@ -227,7 +227,7 @@ namespace MaterialUI
 		private static void CreateSliderLabel()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Slider_label.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Slider_label.prefab",
 					typeof(GameObject))) as GameObject;
 			SetupObject("Slider");
 		}
@@ -237,7 +237,7 @@ namespace MaterialUI
 		private static void CreateSliderLabelValue()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Slider_label_value.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Slider_label_value.prefab",
 					typeof(GameObject))) as GameObject;
 			SetupObject("Slider");
 		}
@@ -247,7 +247,7 @@ namespace MaterialUI
 		private static void CreateSelectionBox()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/SelectionBox.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/SelectionBox.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Selection Box");
 		}
@@ -258,7 +258,7 @@ namespace MaterialUI
 		{
 			theThing =
 				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath(
-					"Assets/MaterialUI/ComponentPrefabs/SelectionBox - Flat.prefab", typeof (GameObject))) as GameObject;
+					"Packages/com.invexgames.materialui/ComponentPrefabs/SelectionBox - Flat.prefab", typeof (GameObject))) as GameObject;
 			SetupObject("Selection Box - Flat");
 		}
 
@@ -268,7 +268,7 @@ namespace MaterialUI
 		{
 			theThing =
 				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath(
-					"Assets/MaterialUI/ComponentPrefabs/DialogBox - Normal.prefab", typeof (GameObject))) as GameObject;
+					"Packages/com.invexgames.materialui/ComponentPrefabs/DialogBox - Normal.prefab", typeof (GameObject))) as GameObject;
 			SetupObject("Dialog Box - Normal");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -279,7 +279,7 @@ namespace MaterialUI
 		{
 			theThing =
 				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath(
-					"Assets/MaterialUI/ComponentPrefabs/DialogBox - Scroll.prefab", typeof (GameObject))) as GameObject;
+					"Packages/com.invexgames.materialui/ComponentPrefabs/DialogBox - Scroll.prefab", typeof (GameObject))) as GameObject;
 			SetupObject("Dialog Box - Scroll");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -290,7 +290,7 @@ namespace MaterialUI
 		{
 			theThing =
 				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath(
-					"Assets/MaterialUI/ComponentPrefabs/DialogBox - Simple.prefab", typeof (GameObject))) as GameObject;
+					"Packages/com.invexgames.materialui/ComponentPrefabs/DialogBox - Simple.prefab", typeof (GameObject))) as GameObject;
 			SetupObject("Dialog Box - Simple");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -299,7 +299,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/Divider/Light", false, 13)]
 		private static void CreateDividerLight()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Divider - Light.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Divider - Light.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("Divider");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -308,7 +308,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/Divider/Dark", false, 13)]
 		private static void CreateDividerDark()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Divider - Dark.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Divider - Dark.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("Divider");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -317,7 +317,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/ListView", false, 13)]
 		private static void CreateListView()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/ListView.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/ListView.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("ListView");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 			theThing.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
@@ -327,7 +327,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Single-line item/Text only", false, 13)]
 		private static void CreateListItemSingle()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Single.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Single.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -336,7 +336,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Single-line item/Text with icon", false, 13)]
 		private static void CreateListItemSingleIcon()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Single Icon.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Single Icon.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -345,7 +345,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Single-line item/Text with avatar", false, 13)]
 		private static void CreateListItemSingleAvatar()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Single Avatar.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Single Avatar.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -354,7 +354,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Single-line item/Text Only", false, 13)]
 		private static void CreateListItemSingleIconAvatar()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Single Icon Avatar.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Single Icon Avatar.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -363,7 +363,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Double-line item/Text only", false, 13)]
 		private static void CreateListItemDouble()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Double.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Double.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -372,7 +372,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Double-line item/Text with icon", false, 13)]
 		private static void CreateListItemDoubleIcon()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Double Icon.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Double Icon.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -381,7 +381,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Double-line item/Text with avatar", false, 13)]
 		private static void CreateListItemDoubleAvatar()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Double Avatar.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Double Avatar.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -390,7 +390,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Double-line item/Text Only", false, 13)]
 		private static void CreateListItemDoubleIconAvatar()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Double Icon Avatar.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Double Icon Avatar.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -399,7 +399,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Triple-line item/Text only", false, 13)]
 		private static void CreateListItemTriple()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Triple.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Triple.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -408,7 +408,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Triple-line item/Text with icon", false, 13)]
 		private static void CreateListItemTripleIcon()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Triple Icon.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Triple Icon.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -417,7 +417,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Triple-line item/Text with avatar", false, 13)]
 		private static void CreateListItemTripleAvatar()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Triple Avatar.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Triple Avatar.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -426,7 +426,7 @@ namespace MaterialUI
 		[MenuItem("MaterialUI/Create/List/Triple-line item/Text Only", false, 13)]
 		private static void CreateListItemTripleIconAvatar()
 		{
-			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/List Item/List Item Triple Icon Avatar.prefab", typeof(GameObject))) as GameObject;
+			theThing = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/List Item/List Item Triple Icon Avatar.prefab", typeof(GameObject))) as GameObject;
 			SetupObject("List Item");
 			theThing.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 		}
@@ -438,7 +438,7 @@ namespace MaterialUI
 		private static void CreateNavDrawer()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Nav Drawer.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Nav Drawer.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Nav Drawer");
 			theThing.GetComponent<RectTransform>().sizeDelta = new Vector2(theThing.GetComponent<RectTransform>().sizeDelta.x, 8f);
@@ -451,7 +451,7 @@ namespace MaterialUI
 		private static void CreateAppBar()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/App Bar.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/App Bar.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("App Bar");
 			theThing.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
@@ -463,7 +463,7 @@ namespace MaterialUI
 		private static void CreateScreenManager()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/ScreenManager.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/ScreenManager.prefab",
 					typeof(GameObject))) as GameObject;
 			SetupObject("Screen Manager");
 			theThing.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
@@ -475,7 +475,7 @@ namespace MaterialUI
 		private static void CreateScreen()
 		{
 			theThing =
-				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/MaterialUI/ComponentPrefabs/Screen.prefab",
+				GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Packages/com.invexgames.materialui/ComponentPrefabs/Screen.prefab",
 					typeof (GameObject))) as GameObject;
 			SetupObject("Screen");
 			theThing.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
