@@ -9,6 +9,13 @@
     "material",
     "design"
   ],
+  "samples": [
+    {
+      "displayName": "Examples",
+      "description": "A serie of example scenes",
+      "path": "Samples~/Examples"
+    }
+  ],
   "description": "Unity package of latest Open Source version on MaterialUI by InvexGames",
   "dependencies": {}
 }
