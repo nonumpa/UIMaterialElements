@@ -1,21 +1,22 @@
 {
   "name": "com.battlefieldnoob.uimaterialelements",
-  "displayName": "MaterialUI",
-  "version": "0.2.62",
+  "displayName": "UI Material Elements",
+  "version": "0.3.0-preview",
   "unity": "2019.2",
   "keywords": [
     "unity",
     "ui",
     "material",
-    "design"
+    "design",
+    "uielements",
+    "uitoolkit"
   ],
+  "description": "MaterialUI by InvexGames implemented in UIElements",
   "samples": [
     {
       "displayName": "Examples",
       "description": "A serie of example scenes",
       "path": "Samples~/Examples"
     }
-  ],
-  "description": "Unity package of latest Open Source version on MaterialUI by InvexGames",
-  "dependencies": {}
+  ]
 }
