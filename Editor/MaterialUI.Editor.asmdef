@@ -1,0 +1,17 @@
+{
+    "name": "MaterialUI.Editor",
+    "references": [
+        "GUID:9871468729256ae449761e1cfc4fb6ab"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
