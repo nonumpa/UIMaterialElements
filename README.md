@@ -1,14 +1,25 @@
 **MaterialUI**
 ==========
 
-**[Check out the new MaterialUI here!](http://materialunity.com)**
+MaterialUI is a UI kit for Unity that follows Google's official Material Design guidelines.
 
 ![](https://thumbs.gfycat.com/CreepyEmotionalElk-size_restricted.gif)
 
-MaterialUI is a UI kit for Unity that follows Google's official Material Design guidelines.
+This plugin was initially developed by [Invex Games](http://www.invexgames.com/) as opensource project, then it become an paid plugin and reached Unity Asset Store (was available [here](https://assetstore.unity.com/packages/tools/gui/materialui-51870), actually the plugin is deprecated and cannot be buyed anymore).
 
-Please note that this package is outdated and is no longer worked on nor supported. You can find the [shiny new version of MaterialUI on the Unity Asset Store](https://www.assetstore.unity3d.com/en/#!/content/51870), which is better, faster, and more feature-packed! It's also still being updated with new features and improvements.
+The idea of this fork is to maintain the opensource version of MaterialUI (which has less components implemented) and trying to align the plugin with the paid version and also develop a UI Elements (now UI Toolkit) version
 
-I'd advise only using this for learning purposes, as it probably won't work well with recent Unity versions.
+Because i've buyed the complete plugin, i've tried to contact Invex Games and talk to them to make the complete version opensource, but at today they didn't reply me
 
-You can contact me at materialUI@invexgames.com, but providing support for this package isn't my top priority.
+Any issue/pull request/discussion is welcome and encouraged
+
+
+*Invex Games Contacts*
+==========
+[Invex Games Website](http://www.invexgames.com/)
+
+[MaterialUI Website](http://materialunity.com/)
+
+[MaterialUI Asset Store](https://assetstore.unity.com/packages/tools/gui/materialui-51870)
+
+[MaterialUI support email](materialUI@invexgames.com)
