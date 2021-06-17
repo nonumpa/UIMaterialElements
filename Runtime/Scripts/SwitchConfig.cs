@@ -38,6 +38,7 @@ namespace MaterialUI
 		[SerializeField] private Text text;
 
 		private RectTransform switchRectTransform;
+		private RectTransform toggleRectTransform;
 		private CheckBoxToggler checkBoxToggler;
 		private RippleConfig rippleConfig;
 
@@ -54,14 +55,19 @@ namespace MaterialUI
 		private int state;
 		private float animStartTime;
 		private float animDeltaTime;
+		private float switchOnPosition;
+		private float switchOffPosition;
 
 		void OnEnable()
 		{
 			//	Set references
 			toggle = gameObject.GetComponent<Toggle>();
+			toggleRectTransform = toggle.GetComponent<RectTransform>();
 			switchRectTransform = switchImage.GetComponent<RectTransform>();
 			checkBoxToggler = text.GetComponent<CheckBoxToggler>();
 			rippleConfig = gameObject.GetComponent<RippleConfig>();
+			switchOnPosition = toggleRectTransform.rect.width/2;
+			switchOffPosition = -switchOnPosition;
 		}
 
 		void Start()
@@ -106,8 +112,8 @@ namespace MaterialUI
 
 		private void TurnOnSilent()
 		{
-			if (switchRectTransform.anchoredPosition != new Vector2(8f, 0f))
-				switchRectTransform.anchoredPosition = new Vector2(8f, 0f);
+			if (switchRectTransform.anchoredPosition != new Vector2(switchOnPosition, 0f))
+				switchRectTransform.anchoredPosition = new Vector2(switchOnPosition, 0f);
 
 			if (lastToggleInteractableState)
 			{
@@ -136,8 +142,8 @@ namespace MaterialUI
 		private void TurnOffSilent()
 		{
 			backImage.enabled = true;
-			if (switchRectTransform.anchoredPosition != new Vector2(-8f, 0f))
-				switchRectTransform.anchoredPosition = new Vector2(-8f, 0f);
+			if (switchRectTransform.anchoredPosition != new Vector2(switchOffPosition, 0f))
+				switchRectTransform.anchoredPosition = new Vector2(switchOffPosition, 0f);
 
 			if (lastToggleInteractableState)
 			{
@@ -192,7 +198,7 @@ namespace MaterialUI
 			{
 				if (animDeltaTime <= animationDuration)
 				{
-					switchRectTransform.anchoredPosition = Anim.Quint.SoftOut(new Vector2(currentSwitchPosition, 0f), new Vector2(8f, 0f), animDeltaTime, animationDuration);
+					switchRectTransform.anchoredPosition = Anim.Quint.SoftOut(new Vector2(currentSwitchPosition, 0f), new Vector2(switchOnPosition, 0f), animDeltaTime, animationDuration);
 					switchImage.color = Anim.Quint.SoftOut(currentColor, onColor, animDeltaTime, animationDuration);
 					backImage.color = Anim.Quint.SoftOut(currentBackColor, onColor, animDeltaTime, animationDuration);
 
@@ -204,7 +210,7 @@ namespace MaterialUI
 				}
 				else
 				{
-					switchRectTransform.anchoredPosition = new Vector2(8f, 0f);
+					switchRectTransform.anchoredPosition = new Vector2(switchOnPosition, 0f);
 					switchImage.color = onColor;
 					backImage.color = onColor;
 
@@ -220,7 +226,7 @@ namespace MaterialUI
 			{
 				if (animDeltaTime <= animationDuration * 0.75f)
 				{
-					switchRectTransform.anchoredPosition = Anim.Quint.SoftOut(new Vector2(currentSwitchPosition, 0f), new Vector2(-8f, 0f), animDeltaTime, animationDuration);
+					switchRectTransform.anchoredPosition = Anim.Quint.SoftOut(new Vector2(currentSwitchPosition, 0f), new Vector2(switchOffPosition, 0f), animDeltaTime, animationDuration);
 					switchImage.color = Anim.Sept.InOut(currentColor, offColor, animDeltaTime, animationDuration * 0.75f);
 					backImage.color = Anim.Sept.InOut(currentBackColor, backOffColor, animDeltaTime, animationDuration * 0.75f);
 
@@ -232,7 +238,7 @@ namespace MaterialUI
 				}
 				else
 				{
-					switchRectTransform.anchoredPosition = new Vector2(-8f, 0f);
+					switchRectTransform.anchoredPosition = new Vector2(switchOffPosition, 0f);
 
 					switchImage.color = offColor;
 					backImage.color = backOffColor;
