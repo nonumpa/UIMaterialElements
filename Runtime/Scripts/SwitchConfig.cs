@@ -22,6 +22,7 @@ namespace MaterialUI
 		public Color offColor;
 		public Color disabledColor;
 
+		public Color backOnColor;
 		public Color backOffColor;
 		public Color backDisabledColor;
 
@@ -118,7 +119,7 @@ namespace MaterialUI
 			if (lastToggleInteractableState)
 			{
 				switchImage.color = onColor;
-				backImage.color = onColor;
+				backImage.color = backOnColor;
 
 				if (changeTextColor)
 					text.color = onColor;
@@ -163,7 +164,7 @@ namespace MaterialUI
 			if (toggle.isOn)
 			{
 				switchImage.color = onColor;
-				backImage.color = onColor;
+				backImage.color = backOnColor;
 				if (changeTextColor)
 					text.color = onColor;
 				else
@@ -200,7 +201,7 @@ namespace MaterialUI
 				{
 					switchRectTransform.anchoredPosition = Anim.Quint.SoftOut(new Vector2(currentSwitchPosition, 0f), new Vector2(switchOnPosition, 0f), animDeltaTime, animationDuration);
 					switchImage.color = Anim.Quint.SoftOut(currentColor, onColor, animDeltaTime, animationDuration);
-					backImage.color = Anim.Quint.SoftOut(currentBackColor, onColor, animDeltaTime, animationDuration);
+					backImage.color = Anim.Quint.SoftOut(currentBackColor, backOnColor, animDeltaTime, animationDuration);
 
 					if (changeTextColor)
 						text.color = Anim.Quint.SoftOut(currentTextColor, onColor, animDeltaTime, animationDuration);
@@ -212,7 +213,7 @@ namespace MaterialUI
 				{
 					switchRectTransform.anchoredPosition = new Vector2(switchOnPosition, 0f);
 					switchImage.color = onColor;
-					backImage.color = onColor;
+					backImage.color = backOnColor;
 
 					if (changeTextColor)
 						text.color = onColor;
